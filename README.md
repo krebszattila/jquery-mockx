@@ -10,7 +10,7 @@ Note: it is mostly tested with JSON requests.
 
 ## Usage
 
-For mocking the ajax request you do not need to modify any of your ajax calls. Instead, you can register handlers, which will be checked on every ajax call. If one of the registered handlers matches the ajax (by URL pattern, HTTP method or a custom match function), the request will be mocked by calling the hanlder function. If no matching handlers found, the request will be a normal ajax call.
+For mocking the ajax request you do not need to modify any of your ajax calls. Instead, you can register handlers, which will be checked on every ajax call. If one of the registered handlers matches the ajax (by URL pattern, HTTP method or a custom match function), the request will be mocked by calling the handler function. If no matching handlers found, the request will be a normal ajax call.
 
 ## API
 
@@ -115,7 +115,7 @@ $.mockx('unregister', handlerId);
 Unregister multiple handlers:
 
 ```javascript
-var hanlderIds = $.mockx('register', [{
+var handlerIds = $.mockx('register', [{
     // handler #1 options
 }, {
     // handler #2 options
